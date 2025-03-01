@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <!-- Tainwind CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .poppins-font {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body id="screen" class="bg-[#dcddf5] poppins-font">
+    <!--header-->
+    <header class="w-[1300] h-20 m-4 bg-white rounded-2xl flex">
+      <div class="flex items-center mr-[850px]">
+        <img class="m-4 w-[48px] h-[48px]" src="assets/logo.png" alt="" />
+        <h1 class="w-[180px] h-[50px] font-normal text-[28px]">
+          Dev<span class="text-black w-[180px] h-[50px] font-bold text-[28px]"
+            >Board</span
+          >
+        </h1>
+      </div>
+      <div
+        class="flex rounded-full bg-slate-50 w-[120px] h-[60px] justify-center items-center gap-4 mt-2"
+      >
+        <img class="w-[32px] h-[32px]" src="assets/checkbox.png" alt="" />
+        <h1 class="w-[30px] h-[34px] text-3xl font-bold">23</h1>
+      </div>
+      <div class="bg-[#F4F7FF] rounded-full w-13 h-13 m-3">
+        <button id="button" class="w-[30px] h-[30px] rounded-full m-[11px]">
+          <img src="assets/theme-btn.png" alt="" />
+        </button>
+      </div>
+    </header>
+    <!--card-->
+    <section class="flex">
+      <section class="main rounded-2xl bg-white w-[1000px] h-[800px] pt-6">
+        <section class="flex justify-evenly">
+          <div
+            class="0ne bg-[#F4F7FF] w-[230px] h-[100px] flex align-middle items-center rounded-2xl justify-evenly"
+          >
+            <div
+              class="o flex justify-center items-center rounded-full bg-whit w-[64px] h-[63px]"
+            >
+              <img src="assets/checkbox.png" alt="" />
+            </div>
+            <div class="ne ml-4">
+              <h1 class="text-[14px]">Task Assigned </h1>
+              <p class="font-bold text-2xl">06</p>
+            </div>
+          </div>
+          <a href="2nd.html"
+            ><div
+              class="two bg-linear-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] w-[460px] h-[100px] flex align-middle items-center justify-evenly rounded-lg"
+            >
+              <div class="t flex justify-center items-center w-[64px] h-[63px]">
+                <img src="assets/board.png" alt="" />
+              </div>
+
+              <p class="font-medium text-[20px]">
+                Discover Something <br />
+                New Today!
+              </p>
+            </div></a
+          >
+
+          <div
+            class="three bg-[#F4F7FF] w-[230px] h-[100px] flex align-middle items-center rounded-2xl justify-evenly"
+          >
+            <div
+              class="th flex justify-center items-center rounded-full bg-white w-[64px] h-[63px]"
+            >
+              <img src="assets/calender.png" alt="" />
+            </div>
+            <div class="ree ml-4">
+              <h1 id="dates" class="text-[14px]"></h1>
+            </div>
+          </div>
+        </section>
+        <section
+          class="card-main bg-white grid grid-cols-3 grid-rows-2 w-[1000px] pl-4"
+        >
+          <section class="pt-10">
+            <div class="w-[310px] bg-[#e5e8f0] text-center p-4 rounded-lg">
+              <div class="mm">
+                <h6
+                  class="bg-white w-[110px] h-[40px] content-center rounded-lg"
+                >
+                  ShopEase
+                </h6>
+                <h1
+                  class="text-black font-medium text-[20px] mr-4 pt-2 pb-2 rounded-lg"
+                >
+                  Fix Mobile Button Issue
+                </h1>
+                <p
+                  class="bg-white font-[250] text-[15px] w-[275px] h-[80px] strole-[#3752FD00] content-evenly rounded-lg"
+                >
+                  Debug using Chrome <br />
+                  DevTools, check for overlapping...
+                </p>
+              </div>
+              <div
+                class="mn flex justify-between items-center w-[301px] h-[80px] pr-4"
+              >
+                <p>Deadline</p>
+                <button
+                  class="w-[135px] h-[43px] content-center bg-[#3752FD] text-white rounded-lg"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </section>
+          <section class="pt-10">
+            <div class="w-[310px] bg-[#e5e8f0] text-center p-4 rounded-lg">
+              <div class="mm">
+                <h6
+                  class="bg-white w-[110px] h-[40px] content-center rounded-lg"
+                >
+                  CloudSync
+                </h6>
+                <h1
+                  class="text-black font-medium text-[20px] mr-4 pt-2 pb-2 rounded-lg"
+                >
+                  Add Dark Mode
+                </h1>
+                <p
+                  class="bg-white font-[250] text-[15px] w-[275px] h-[80px] strole-[#3752FD00] content-evenly rounded-lg"
+                >
+                  Store the user's preference in <br />
+                  localStorage, update CSS ...
+                </p>
+              </div>
+              <div
+                class="mn flex justify-between items-center w-[301px] h-[80px] pr-4"
+              >
+                <p>Deadline</p>
+                <button
+                  class="w-[135px] h-[43px] content-center bg-[#3752FD] text-white rounded-lg"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </section>
+          <section class="pt-10">
+            <div class="w-[310px] bg-[#e5e8f0] text-center p-4 rounded-lg">
+              <div class="mm">
+                <h6
+                  class="bg-white w-[110px] h-[40px] content-center rounded-lg"
+                >
+                  SwiftPay
+                </h6>
+                <h1
+                  class="text-black font-medium text-[20px] mr-4 pt-2 pb-2 rounded-lg"
+                >
+                  Optimize Home page 
+                </h1>
+                <p
+                  class="bg-white font-[250] text-[15px] w-[275px] h-[80px] strole-[#3752FD00] content-evenly rounded-lg"
+                >
+                  Debug using Chrome DevTools <br />, check for overlapping ...
+                </p>
+              </div>
+              <div
+                class="mn flex justify-between items-center w-[301px] h-[80px] pr-4"
+              >
+                <p>Deadline</p>
+                <button
+                  class="w-[135px] h-[43px] content-center bg-[#3752FD] text-white rounded-lg"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </section>
+          <section class="pt-10">
+            <div class="w-[310px] bg-[#e5e8f0] text-center p-4 rounded-lg">
+              <div class="mm">
+                <h6
+                  class="bg-white w-[110px] h-[40px] content-center rounded-lg"
+                >
+                  Meta
+                </h6>
+                <h1
+                  class="text-black font-medium text-[20px] mr-4 pt-2 pb-2 rounded-lg"
+                >
+                  Add new emoji 🤲
+                </h1>
+                <p
+                  class="bg-white font-[250] text-[15px] w-[275px] h-[80px] strole-[#3752FD00] content-evenly rounded-lg"
+                >
+                  Debug using Chrome <br />
+                  DevTools, check for overlapping...
+                </p>
+              </div>
+              <div
+                class="mn flex justify-between items-center w-[301px] h-[80px] pr-4"
+              >
+                <p>Deadline</p>
+                <button
+                  class="w-[135px] h-[43px] content-center bg-[#3752FD] text-white rounded-lg"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </section>
+          <section class="pt-10">
+            <div class="w-[310px] bg-[#e5e8f0] text-center p-4 rounded-lg">
+              <div class="mm">
+                <h6
+                  class="bg-white w-[110px] h-[40px] content-center rounded-lg"
+                >
+                  Google LLC
+                </h6>
+                <h1
+                  class="text-black font-medium text-[20px] mr-4 pt-2 pb-2 rounded-lg"
+                >
+                  Integrate OpenAI API
+                </h1>
+                <p
+                  class="bg-white font-[250] text-[15px] w-[275px] h-[80px] strole-[#3752FD00] content-evenly rounded-lg"
+                >
+                  Debug using Chrome <br />
+                  DevTools, check for overlapping...
+                </p>
+              </div>
+              <div
+                class="mn flex justify-between items-center w-[301px] h-[80px] pr-4"
+              >
+                <p>Deadline</p>
+                <button
+                  class="w-[135px] h-[43px] content-center bg-[#3752FD] text-white rounded-lg"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </section>
+          <section class="pt-10">
+            <div class="w-[310px] bg-[#e5e8f0] text-center p-4 rounded-lg">
+              <div class="mm">
+                <h6
+                  class="bg-white w-[110px] h-[40px] content-center rounded-lg"
+                >
+                  Glassdoar
+                </h6>
+                <h1
+                  class="text-black font-medium text-[20px] mr-4 pt-2 pb-2 rounded-lg"
+                >
+                  Improve Job searching
+                </h1>
+                <p
+                  class="bg-white font-[250] text-[15px] w-[275px] h-[80px] strole-[#3752FD00] content-evenly rounded-lg"
+                >
+                  Debug using Chrome <br />
+                  DevTools, check for overlapping...
+                </p>
+              </div>
+              <div
+                class="mn flex justify-between items-center w-[301px] h-[80px] pr-4"
+              >
+                <p>Deadline</p>
+                <button
+                  class="w-[135px] h-[43px] content-center bg-[#3752FD] text-white rounded-lg"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+      <section class="rounded-lg w-[290px] h-[800px] ml-5 bg-white">
+        <div class="flex justify-evenly pt-10">
+          <img src="assets/activity.png" alt="" />
+          <h5 class="w-[120px] h-[30px] font-medium text-[20px] text-[#00303C]">
+            Activity Log
+          </h5>
+        </div>
+        <div class="bg-[#3752FD] text-white w-38 h-10 ml-18 rounded-lg mt-3">
+          <button class="text-[14px] ml-7 mt-2">Clear History</button>
+        </div>
+        <div class="border-b-1 border-dashed bg-gray-200 mt-20"></div>
+      </section>
+    </section>
+
+    <script src="mapjs/ss.js"></script>
+  </body>
+</html>
