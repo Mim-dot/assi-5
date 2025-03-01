@@ -18,7 +18,7 @@
       }
     </style>
   </head>
-  <body id="screen" class="bg-[#dcddf5] poppins-font">
+  <body id="screen" class="bg-[#dae0f0bd] poppins-font">
     <!--header-->
     <header class="w-[1300] h-20 m-4 bg-white rounded-2xl flex">
       <div class="flex items-center mr-[850px]">
@@ -32,8 +32,8 @@
       <div
         class="flex rounded-full bg-slate-50 w-[120px] h-[60px] justify-center items-center gap-4 mt-2"
       >
-        <img class="w-[32px] h-[32px]" src="assets/checkbox.png" alt="" />
-        <h1 class="w-[30px] h-[34px] text-3xl font-bold">23</h1>
+        <img  class="w-[32px] h-[32px]" src="assets/checkbox.png" alt="" />
+        <h1 id="tweentythree" class="w-[30px] h-[34px] text-3xl font-bold">23</h1>
       </div>
       <div class="bg-[#F4F7FF] rounded-full w-13 h-13 m-3">
         <button id="button" class="w-[30px] h-[30px] rounded-full m-[11px]">
@@ -55,7 +55,7 @@
             </div>
             <div class="ne ml-4">
               <h1 class="text-[14px]">Task Assigned </h1>
-              <p class="font-bold text-2xl">06</p>
+              <p id="six" class="font-bold text-2xl">06</p>
             </div>
           </div>
           <a href="2nd.html"
@@ -77,15 +77,16 @@
             class="three bg-[#F4F7FF] w-[230px] h-[100px] flex align-middle items-center rounded-2xl justify-evenly"
           >
             <div
-              class="th flex justify-center items-center rounded-full bg-white w-[64px] h-[63px]"
+              class="th ml-4 flex justify-center items-center rounded-full bg-white w-[64px] h-[63px]"
             >
               <img src="assets/calender.png" alt="" />
             </div>
             <div class="ree ml-4">
-              <h1 id="dates" class="text-[14px]"></h1>
+              <h1 id="dates" class="datess font-bold text-[18px] mr-3"></h1>
             </div>
           </div>
         </section>
+        <div class="border-b-1 border-dashed border-[#dae0f0bd] mt-10"></div>
         <section
           class="card-main bg-white grid grid-cols-3 grid-rows-2 w-[1000px] pl-4"
         >
@@ -98,7 +99,7 @@
                   ShopEase
                 </h6>
                 <h1
-                  class="text-black font-medium text-[20px] mr-4 pt-2 pb-2 rounded-lg"
+                  class="h1txt  text-black font-medium text-[20px] mr-4 pt-2 pb-2 rounded-lg"
                 >
                   Fix Mobile Button Issue
                 </h1>
@@ -112,9 +113,15 @@
               <div
                 class="mn flex justify-between items-center w-[301px] h-[80px] pr-4"
               >
-                <p>Deadline</p>
+                <div>
+                  <p>Deadline</p>
+                  <h1 id="date-box font-bold text-[18px] mr-3">
+                    21 March 2025
+                  </h1>
+                </div>
                 <button
-                  class="w-[135px] h-[43px] content-center bg-[#3752FD] text-white rounded-lg"
+                  id="btn-1"
+                  class="allbtn w-[135px] h-[43px] content-center bg-[#3752FD] text-white rounded-lg"
                 >
                   Completed
                 </button>
@@ -130,7 +137,7 @@
                   CloudSync
                 </h6>
                 <h1
-                  class="text-black font-medium text-[20px] mr-4 pt-2 pb-2 rounded-lg"
+                  class="h1txt text-black font-medium text-[20px] mr-4 pt-2 pb-2 rounded-lg"
                 >
                   Add Dark Mode
                 </h1>
@@ -144,9 +151,15 @@
               <div
                 class="mn flex justify-between items-center w-[301px] h-[80px] pr-4"
               >
-                <p>Deadline</p>
+                <div>
+                  <p>Deadline</p>
+                  <h1 id="date-box font-bold text-[18px] mr-3">
+                    21 March 2025
+                  </h1>
+                </div>
                 <button
-                  class="w-[135px] h-[43px] content-center bg-[#3752FD] text-white rounded-lg"
+                  id="btn-2"
+                  class="allbtn w-[135px] h-[43px] content-center bg-[#3752FD] text-white rounded-lg"
                 >
                   Completed
                 </button>
@@ -162,7 +175,7 @@
                   SwiftPay
                 </h6>
                 <h1
-                  class="text-black font-medium text-[20px] mr-4 pt-2 pb-2 rounded-lg"
+                  class="h1txt text-black font-medium text-[20px] mr-4 pt-2 pb-2 rounded-lg"
                 >
                   Optimize Home page 
                 </h1>
@@ -175,9 +188,15 @@
               <div
                 class="mn flex justify-between items-center w-[301px] h-[80px] pr-4"
               >
-                <p>Deadline</p>
+                <div>
+                  <p>Deadline</p>
+                  <h1 id="date-box font-bold text-[18px] mr-3">
+                    21 March 2025
+                  </h1>
+                </div>
                 <button
-                  class="w-[135px] h-[43px] content-center bg-[#3752FD] text-white rounded-lg"
+                  id="btn-3"
+                  class="allbtn w-[135px] h-[43px] content-center bg-[#3752FD] text-white rounded-lg"
                 >
                   Completed
                 </button>
@@ -193,7 +212,7 @@
                   Meta
                 </h6>
                 <h1
-                  class="text-black font-medium text-[20px] mr-4 pt-2 pb-2 rounded-lg"
+                  class="h1txt text-black font-medium text-[20px] mr-4 pt-2 pb-2 rounded-lg"
                 >
                   Add new emoji 🤲
                 </h1>
@@ -207,9 +226,15 @@
               <div
                 class="mn flex justify-between items-center w-[301px] h-[80px] pr-4"
               >
-                <p>Deadline</p>
+                <div>
+                  <p>Deadline</p>
+                  <h1 id="date-box font-bold text-[18px] mr-3">
+                    21 March 2025
+                  </h1>
+                </div>
                 <button
-                  class="w-[135px] h-[43px] content-center bg-[#3752FD] text-white rounded-lg"
+                  id="btn-4"
+                  class="allbtn w-[135px] h-[43px] content-center bg-[#3752FD] text-white rounded-lg"
                 >
                   Completed
                 </button>
@@ -225,7 +250,7 @@
                   Google LLC
                 </h6>
                 <h1
-                  class="text-black font-medium text-[20px] mr-4 pt-2 pb-2 rounded-lg"
+                  class="h1txt text-black font-medium text-[20px] mr-4 pt-2 pb-2 rounded-lg"
                 >
                   Integrate OpenAI API
                 </h1>
@@ -239,9 +264,15 @@
               <div
                 class="mn flex justify-between items-center w-[301px] h-[80px] pr-4"
               >
-                <p>Deadline</p>
+                <div>
+                  <p>Deadline</p>
+                  <h1 id="date-box font-bold text-[18px] mr-3">
+                    21 March 2025
+                  </h1>
+                </div>
                 <button
-                  class="w-[135px] h-[43px] content-center bg-[#3752FD] text-white rounded-lg"
+                  btn-5
+                  class="allbtn w-[135px] h-[43px] content-center bg-[#3752FD] text-white rounded-lg"
                 >
                   Completed
                 </button>
@@ -257,7 +288,7 @@
                   Glassdoar
                 </h6>
                 <h1
-                  class="text-black font-medium text-[20px] mr-4 pt-2 pb-2 rounded-lg"
+                  class="h1txt text-black font-medium text-[20px] mr-4 pt-2 pb-2 rounded-lg"
                 >
                   Improve Job searching
                 </h1>
@@ -271,9 +302,15 @@
               <div
                 class="mn flex justify-between items-center w-[301px] h-[80px] pr-4"
               >
-                <p>Deadline</p>
+                <div>
+                  <p>Deadline</p>
+                  <h1 id="date-box font-bold text-[18px] mr-3">
+                    21 March 2025
+                  </h1>
+                </div>
                 <button
-                  class="w-[135px] h-[43px] content-center bg-[#3752FD] text-white rounded-lg"
+                  id="btn-6"
+                  class="allbtn w-[135px] h-[43px] content-center bg-[#3752FD] text-white rounded-lg"
                 >
                   Completed
                 </button>
@@ -282,17 +319,19 @@
           </section>
         </section>
       </section>
+      <!--r8 side-->
       <section class="rounded-lg w-[290px] h-[800px] ml-5 bg-white">
-        <div class="flex justify-evenly pt-10">
+        <div  class="flex justify-evenly pt-10">
           <img src="assets/activity.png" alt="" />
           <h5 class="w-[120px] h-[30px] font-medium text-[20px] text-[#00303C]">
             Activity Log
           </h5>
         </div>
         <div class="bg-[#3752FD] text-white w-38 h-10 ml-18 rounded-lg mt-3">
-          <button class="text-[14px] ml-7 mt-2">Clear History</button>
+          <button id="history" class="text-[14px] ml-7 mt-2">Clear History</button>
         </div>
-        <div class="border-b-1 border-dashed bg-gray-200 mt-20"></div>
+        <div class="border-b-1 border-dashed border-[#dae0f0bd] mt-14"></div>
+        <div id="clear" class="p-5 "></div>
       </section>
     </section>
 
