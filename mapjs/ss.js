@@ -28,20 +28,25 @@ for (let i = 0; i < allbtnn.length; i++) {
     document.getElementById("six").innerText = sixAdd;
     this.disabled = true;
     this.style.backgroundColor = "rgba(55, 82, 253, 0.21)";
-    
+
     if (sixAdd === 0) {
       alert("Board updated Successfully");
       alert("congrates!!! You have completed all the current task");
     } else {
       alert("Board updated Successfully");
     }
+    const time = new Date();
+    date.setHours(12)
+    date.setMinutes(48)
+    date.setSeconds(15)
+      let Times = time.toLocaleTimeString()
     
     //clear-all
     const history = document.getElementById("clear");
     const p = document.createElement("p");
     p.innerHTML = `
                        <p class="bg-[#F4F7FF] p-3 text-gray-500 mt-0 my-3  rounded-xl text-sm">You have Complete The Task
-                          ${title} at 12:48:15 PM
+                          ${title} at ${Times}
                       </p>              
         `;
     history.appendChild(p);
@@ -51,6 +56,3 @@ for (let i = 0; i < allbtnn.length; i++) {
     });
   });
 }
-
-
- 
